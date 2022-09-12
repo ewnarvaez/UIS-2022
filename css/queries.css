@@ -8,68 +8,11 @@
 /* -------------------------------------------------- */
 
 @media only screen and (max-width: 7680px) {
-    .ordinary-nav { display: -webkit-box; display: -ms-flexbox; display: flex; }
+    body {
+        /* font-size: 80px; */
+    }
+
     .mobile-nav { display: none; }
-}
-
-/* -------------------------------------------------- */
-/* AMAZON KINDLE FIRE HDX 8.9 */
-/* -------------------------------------------------- */
-
-@media only screen and (max-width: 800px) and (max-height: 1280px) {
-    #main-wrapper { height:  100vh; }
-    footer { position: absolute; }
-}
-
-@media only screen and (max-width: 1280px) and (max-height: 800px) {
-    #main-wrapper { height:  100vh; }
-    footer { position: absolute; }
-}
-
-/* -------------------------------------------------- */
-/* GOOGLE NEXUS 7 */
-/* -------------------------------------------------- */
-
-@media only screen and (max-width: 960px) and (min-height: 600px) {
-    #main-wrapper { height:  auto; }
-    footer { position: relative; }
-}
-
-@media only screen and (max-width: 600px) and (min-height: 960px) {
-    #main-wrapper { height:  100vh; }
-    footer { position: absolute; }
-}
-
-/* -------------------------------------------------- */
-/* GOOGLE PIXEL 2XL */
-/* -------------------------------------------------- */
-
-@media only screen and (max-width: 823px) and (min-height: 411px) {
-    #main-wrapper { height:  auto; }
-    footer { position: relative; }
-}
-
-/* -------------------------------------------------- */
-/* LAPTOP PROMEDIO */
-/* -------------------------------------------------- */
-
-@media only screen and (max-width: 1366px) and (min-height: 768px) {
-    #main-wrapper { height:  100vh; }
-    footer { position: absolute; }
-}
-
-@media only screen and (max-width: 1366px) and (max-height: 768px) {
-    #main-wrapper { height:  100vh; }
-    footer { position: absolute; }
-}
-
-@media only screen and (max-width: 1366px) and (max-height: 600px) {
-    #main-wrapper { height:  auto; }
-    footer { position: relative; }
-}
-
-@media only screen and (min-width: 1400px) and (max-width: 1919px) {
-    #main-wrapper { font-size: 20px; }
 }
 
 /* -------------------------------------------------- */
@@ -77,12 +20,9 @@
 /* -------------------------------------------------- */
 
 @media only screen and (max-width: 1920px) and (min-height: 1080px) {
-    #main-wrapper { height:  100vh; }
-    footer { position: absolute; }
 }
 
 @media only screen and (min-width: 1920px) and (max-width: 3839px) {
-    #main-wrapper { font-size: 25px; }
 }
 
 /* -------------------------------------------------- */
@@ -90,44 +30,45 @@
 /* -------------------------------------------------- */
 
 @media only screen and (max-width: 3840px) and (min-height: 2160px) {
-    #main-wrapper { height:  100vh; }
-    footer { position: absolute; }
 }
 
 @media only screen and (min-width: 3840px) {
-    #main-wrapper { font-size: 40px; }
 }
 
 /* -------------------------------------------------- */
-/* IPHONE X */
+/* LAPTOP PROMEDIO */
 /* -------------------------------------------------- */
 
-@media only screen and (max-width: 812px) and (min-height: 375px) {
-    #main-wrapper { height:  auto; }
-    footer { position: relative; }
+@media only screen and (max-width: 1366px) and (min-height: 768px) {
 }
+
+@media only screen and (max-width: 1366px) and (max-height: 768px) {
+}
+
+@media only screen and (max-width: 1366px) and (max-height: 600px) {
+}
+
+@media only screen and (min-width: 1400px) and (max-width: 1919px) {
+    
+}
+
+
 
 /* -------------------------------------------------- */
 /* LAPTOP */
 /* -------------------------------------------------- */
 
 @media only screen and (max-width: 1440px) and (min-height: 900px) {
-    #main-wrapper { height:  100vh; }
-    footer { position: absolute; }
 }
 
 @media only screen and (max-width: 1200px) {
-    .span-1-of-3 { width: 48.2%; }    
+    .span-1-of-3 { }    
     #login-container { -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; }
     .uis-logo { padding-right: 2em; }
     .section-instructions { 
-        position: relative; 
-        width: 32.8%;
         margin: 0 auto;
     }
     .instructions-container { 
-        height: auto; 
-        width: 100%;
     }
 }
 
@@ -141,15 +82,81 @@
 
 @media only screen and (max-width: 920px) {
     .uis-logo { display: none; }
-    .span-1-of-3 { width: 100%; }
+    .span-1-of-3 {  }
     #login-container { -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
     .main-container { -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; right: 0; }
     .instructions-container { width: 100%; right: 0; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
-    .section-instructions { width: 60%; }
+    .section-instructions { }
 }
 
 @media only screen and (max-width: 835px) {
-    .section-instructions { width: 70%; }
+}
+
+/* -------------------------------------------------- */
+/* IPHONE X */
+/* -------------------------------------------------- */
+
+@media only screen and (max-width: 812px) and (min-height: 375px) {
+}
+
+/* -------------------------------------------------- */
+/* MEDIUM SIZES (TABLETS) */
+/* -------------------------------------------------- */
+
+@media only screen and (max-width: 1007px) {
+    .main-header { display: none;}
+    .ordinary-nav {display: none;}
+    #main-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 5em auto 7em;
+    }
+    #main-content {
+        grid-column: 1 / 2;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3 1fr);
+    }
+
+    #login-container {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        margin-bottom: 20px;
+    }
+
+    #section-instructions {
+        margin-bottom: 20px;
+        max-width: 80%;
+    }
+
+    footer {
+        grid-column: 1 / 2;
+    }
+}
+
+/* -------------------------------------------------- */
+/* AMAZON KINDLE FIRE HDX 8.9 */
+/* -------------------------------------------------- */
+
+@media only screen and (max-width: 800px) and (max-height: 1280px) {
+}
+
+@media only screen and (max-width: 1280px) and (max-height: 800px) {
+}
+
+/* -------------------------------------------------- */
+/* GOOGLE NEXUS 7 */
+/* -------------------------------------------------- */
+
+@media only screen and (max-width: 960px) and (min-height: 600px) {
+}
+
+@media only screen and (max-width: 600px) and (min-height: 960px) {
+}
+
+/* -------------------------------------------------- */
+/* GOOGLE PIXEL 2XL */
+/* -------------------------------------------------- */
+
+@media only screen and (max-width: 823px) and (min-height: 411px) {
 }
 
 @media only screen and (max-width: 768px) {
@@ -159,25 +166,22 @@
 }
 
 @media only screen and (max-width: 768px) and (max-height: 720px) {
-    #main-wrapper { height:  auto; }
-    footer { position: relative; }
 }
 
 @media only screen and (max-width: 768px) and (max-height: 780px) {    
-    footer { position: relative; }
-    #main-wrapper { height:  auto; }
 }
 
 @media only screen and (max-width: 712px) {
-    .section-instructions { width: 80%; }
 }
 
-@media only screen and (max-width: 630px) {
-    .row-mobile { width: 100%; }
+/* -------------------------------------------------- */
+/* SMALL SIZES (PHONES) */
+/* -------------------------------------------------- */
+
+@media only screen and (max-width: 640px) {
+    
+
 }
 
 @media only screen and (max-width: 490px) {
-    .section-instructions { width: 100%; }
-    .wrapper-menu { width: 90%; }
 }
-

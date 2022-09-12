@@ -9,10 +9,10 @@
             content="Plataforma educativa tipo Moodle para la comunidad de la Universidad Industrial de Santander UIS">
         <meta name="keywords" content="Universidad Industrial de Santander, UIS, UIS Online, UIS Moodle, Moodle UIS">
         <title> Aula Virtual de Aprendizaje </title>
-        <link href="resources/img/favicon.ico" rel="shortcut icon">
+        <link href="/img/favicon.ico" rel="shortcut icon">
         <link rel="stylesheet" href="/css/normalize.css">
         <link rel="stylesheet" href="/css/style.css">
-        <!-- <link rel="stylesheet" href="/css/queries.css"> -->
+        <link rel="stylesheet" href="/css/queries.css">
         <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     </head>
 
@@ -20,7 +20,7 @@
         <div id="main-container">
             <header class="main-header">
                 <h1 class="hidden">P&aacute;gina de ingreso al Aula Virtual de Aprendizaje ava</h1>
-                <img src="/img/logo2-blanco-1.png" width="100px" height="auto" alt="Logo Universidad Industrial de Santander">
+                <img src="/img/logo2-blanco-1.png" alt="Logo Universidad Industrial de Santander">
             </header>
             <section id="main-content">
                 <nav class="ordinary-nav">
@@ -34,31 +34,63 @@
                         <li><a href="http://ipred.uis.edu.co/eisi/" target="_blank">Acceso<br/>Invitados</a></li>
                     </ul>
                     <ul class="social-links">
-                        <li><a href="https://www.facebook.com/cededuis/?fref=ts" target="_blank"><img src="/img/Facebbok.png" alt="" width="50"></a></li>
-                        <li><a href="https://twitter.com/cededuis" target="_blank"><img src="/img/Twitter.png" alt="" width="50"></a></li>
+                        <li><a href="https://www.facebook.com/cededuis/?fref=ts" target="_blank"><img src="/img/Facebbok.png" alt=""></a></li>
+                        <li><a href="https://twitter.com/cededuis" target="_blank"><img src="/img/Twitter.png" alt=""></a></li>
                     </ul>
                 </nav>
+                <!-- <div class="row-mobile">
+                    <nav class="mobile-nav">
+                        <h2 class="hidden">Men&uacute; Navegaci&oacute;n M&oacute;vil</h2>
+                        <div id="social-mob-container">
+    
+                            <div id="social-mob-subcontainer">
+                                <ul class="social-links-mob">
+                                    <li><a href="https://www.facebook.com/cededuis/?fref=ts" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                                    <li><a href="https://twitter.com/cededuis" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                                </ul>
+                            </div>
+    
+                        </div>
+    
+                        <div class="menu-mob-container">
+                            <div class="wrapper-menu">
+                                <div id="menu">
+                                    <p>MEN&Uacute;</p>
+                                </div>
+                                <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
+                            </div>                    
+                        </div>
+    
+                        <div class="menu-mob-container">               
+                            <ul class="text-mob-nav js--text-mob-nav">
+                                <li><a href="http://www.uis.edu.co" target="_blank">UIS</a></li>
+                                <li><a href="http://tic.uis.edu.co/ava/course/category.php?id=2&perpage=20&adminedit=0" target="_blank">CEDEDUIS</a></li>
+                                <li><a href="http://tic.uis.edu.co/ava/course/index.php?categoryid=155" target="_blank">Vicerrector&iacute;a Ac&aacute;demica</a></li>
+                                <li><a href="http://ipred.uis.edu.co/eisi/" target="_blank">iPred</a></li>
+                            </ul>                          
+                        </div>
+                    </nav>
+                </div>  end row mobile -->
                 <div class="col span-1-of-3" id="login-container">
                     <article class="section-login active" id="section-login">
                         <h2>Aula Virtual <br /> de Aprendizaje</h2>
                         <ul>
                             <li class="login-options">
-                                <img src="img/Pregrado.png" width="53" height="44" alt="Logo Pregrado"
+                                <img src="img/Pregrado.png" alt="Logo Pregrado"
                                     id="pregrado-img">
                                 <h3 id="pregrado-head">Pregrado</h3>
                             </li>
                             <li class="login-options">
-                                <img src="img/Posgrado.png" width="61" height="39" alt="Logo Posgrado"
+                                <img src="img/Posgrado.png" alt="Logo Posgrado"
                                     id="posgrado-img">
                                 <h3 id="posgrado-head">Posgrado</h3>
                             </li>
                             <li class="login-options">
-                                <img src="img/IPRED.png" width="59" height="50" alt="Logo iPred" id="ipred-img">
+                                <img src="img/IPRED.png" alt="Logo iPred" id="ipred-img">
                                 <h3 id="ipred-head">iPred</h3>
                             </li>
                             <li class="login-options">
-                                <img src="img/InstitutoLenguasUIS.png" width="63" height="55"
-                                    alt="Logo Insituto de Lenguas" id="lenguas-img">
+                                <img src="img/InstitutoLenguasUIS.png" alt="Logo Insituto de Lenguas" id="lenguas-img">
                                 <h3 id="lenguas-head">Instituto de Lenguas</h3>
                             </li>
                         </ul>
@@ -66,47 +98,59 @@
                             <h3>Seleccione una opci&oacute;n</span></h3>
                         </div>
                     </article>
-                    <!-- <article class="section-form inactive" id="section-form">
-                            <h2>Aula Virtual de Aprendizaje</h2>
+                    <article class="section-form inactive" id="section-form">
+                        <h2>Aula Virtual <br/>de Aprendizaje</h2>                        
+                        <div class="form-container">
                             <h3>Ingrese <span class="soft-green">aqu&iacute;</span></h3>
                             <form action="#" method="post" id="formulario-login">
-                                <label for="username">Nombre de usuario:</label>
+                                <label for="username">Nombre de usuario</label>
                                 <input type="text" title="usuario" name="username" id="uname" required><br>
-                                <label for="pass">Contrase&ntilde;a:</label>
+                                <label for="pass">Contrase&ntilde;a</label>
                                 <input type="password" title="clave" name="password" id="pass" required><br>
                                 <input type="submit" id="send" value="Iniciar sesi&oacute;n">
                             </form>
                             <div id="back">
-                                <h4 id="back-head">Regresar</h4>
-                                <img src="resources/img/Regresar.png" alt="Icono de Regresar" width="39" height="38" id="back-image">
+                                <p id="back-head">Regresar</p>
+                                <img src="/img/turn-left.png" alt="Icono de Regresar" width="20" id="back-image">
                             </div>
-                        </article> -->
+                        </div>
+                    </article>
                 </div>
                 <div class="col span-personal instructions-container">
-                    <article class="section-instructions active" id="section-instructions">
+                    <article class="section-instructions inactive" id="section-instructions">
                         <h2>Instrucciones de Ingreso</h2>
                         <div class="instrucciones-generales" id="instrucciones-generales">
-                            <p>Debe usar de usuario el c&oacute;digo de estudiante y de contrase&ntilde;a la del Sistema de
-                                Informaci&oacute;n Acad&eacute;mica.</p>
+                            <p>Estudiantes:</p>
+                            <p>
+                                Como nombre de usuario use el código de estudiante. La contraseña es la misma del Módulo de Estudiantes.
+                            </p>
+                            <a href="https://www.uis.edu.co/estudiantesWebJ8/pages/recordarPassword/recordarPassword.jsf" target="_blank">Olvidé mi contraseña</a>
+
+                            <p>Profesores:</p>
+                            <p>Debe usar los datos de ingreso al Sistema de Información Académica - Nuevas versiones.</p>
+                            <a href="https://www.uis.edu.co/estudiantesWebJ8/pages/recordarPassword/recordarPassword.jsf" target="_blank">Olvidé mi contraseña</a>
                         </div>
                         <div class="instrucciones-posgrado" id="instrucciones-posgrado">
-                            <p>Debe usar de usuario y contrase&ntilde;a: e &#43; c&oacute;digo.</p>
+                            <p>Estudiantes:</p>
+                            <p>En el primer ingreso, debe usar como usuario y contraseña la letra <span>e</span> seguida de su documento de identidad. Ejemplo: <span>e</span>1098111111</p>
                         </div>
                         <div class="instrucciones-ingles" id="instrucciones-ingles">
-                            <p>Debe usar de usuario y contrase&ntilde;a: e &#43; documento de identidad.</p>
+                            <p>Estudiantes:</p>
+                            <p>En el primer ingreso, debe usar como usuario y contraseña la letra <span>e</span> seguida de su código, ejemplo: <span>e</span>2053303</p>
                         </div>
                     </article>
                 </div>
             </section>                   
             <footer>
-                <img src="/img/Logo_UIS_74_trans_reducido.png" alt="Logo UIS 70 A&ntilde;os" width="39" height="44">
+                <img src="/img/Logo_UIS_74_trans_reducido.png" alt="Logo UIS 70 A&ntilde;os">
                 <p>Universidad industrial de Santander vigilada mineducaci&oacute;n ordenanza No. 83 de 1994 (junio 22)
                     Car&aacute;cter ac&aacute;demico: Universidad c&oacute;digo SNIES: 1204 Nit: 890201213&mdash;4
                     Notificaciones judiciales a: notijudiciales&#64;uis.edu.co
                 </p>
             </footer>                
         </div> <!-- main-container -->
-        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="/js/plataformas_ingreso.js"></script>
     </body>
 
 </html>

@@ -12,6 +12,8 @@ $(document).ready(function () {
 //        $('#formulario-login').attr('action', '<?php echo $CFG->httpswwwroot; ?>/ava/login/index.php'); 
         $('#section-login').removeClass('active');
         $('#section-login').addClass('inactive');
+        $('#section-login').css('display', 'none');
+
         $('#section-form').removeClass('inactive');
         $('#section-form').addClass('active');
         $('#section-instructions').removeClass('inactive');
